@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {notificationEnvironment} from "../environments/notification-environment";
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-import { Observable, throwError, retry } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 

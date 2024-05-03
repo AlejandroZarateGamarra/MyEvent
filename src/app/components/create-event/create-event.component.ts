@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import {FormControl} from "@angular/forms";
-import { isFormControl, ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormsModule} from "@angular/forms";
 import { MatSnackBar } from '@angular/material/snack-bar';
 import {BasicService} from "../../shared/basic.service";
 import {Event} from "../../model/create-event.model";
@@ -57,6 +57,7 @@ export class CreateEventComponent {
       this.category.value ?? ''
     );
 
+    /*
     this.basicService.createEvent(newEvent).subscribe(
       response => {
         this._snackBar.open('Evento creado con éxito.', 'Cerrar', {
@@ -69,5 +70,7 @@ export class CreateEventComponent {
         });
       }
     );
+
+     */
   }
 }
