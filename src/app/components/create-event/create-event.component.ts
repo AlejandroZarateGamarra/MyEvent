@@ -7,7 +7,7 @@ import { MatSelectModule } from '@angular/material/select';
 import {FormControl} from "@angular/forms";
 import { ReactiveFormsModule} from "@angular/forms";
 import { MatSnackBar } from '@angular/material/snack-bar';
-import {BasicService} from "../../shared/basic.service";
+//import {BasicService} from "../../shared/basic.service";
 import {Event} from "../../model/create-event.model";
 import {RouterLink} from "@angular/router";
 @Component({
@@ -44,9 +44,10 @@ export class CreateEventComponent {
       this.createEvent();
     }
   }
-  constructor(private _snackBar: MatSnackBar, private basicService: BasicService) {}
+  constructor(private _snackBar: MatSnackBar) {}
 
   createEvent() {
+    /*
     const newEvent = new Event(
       this.name.value ?? '',
       this.date.value ?? '',
@@ -56,8 +57,8 @@ export class CreateEventComponent {
       this.direccion.value ?? '',
       this.category.value ?? ''
     );
+    */
 
-    /*
     this.basicService.createEvent(newEvent).subscribe(
       response => {
         this._snackBar.open('Evento creado con éxito.', 'Cerrar', {
@@ -71,6 +72,5 @@ export class CreateEventComponent {
       }
     );
 
-     */
   }
 }
