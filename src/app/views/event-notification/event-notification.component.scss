@@ -1,0 +1,86 @@
+#container {
+
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#success-message {
+  text-align: center;
+  color: black;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  margin-top: -70px;
+}
+
+#rectangle {
+  width: 420px;
+  height: 550px;
+  background-color: rgba(243, 243, 243, 0.5);
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;}
+
+#check-icon {
+  width: 50px;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#transaction-details {
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  font-size: 12px;
+  width: 250px;
+
+}
+
+#transaction-details > p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  color: #878787;
+  font-weight: bold;
+}
+
+#transaction-details span {
+  color: #585858;
+}
+#end-button {
+  background-color: #0057E2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#download-button {
+  background-color: #FFFFFF;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+#transaction-details p:last-child {
+  position: relative;
+}
+
+#transaction-details p:last-child::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid black;
+}
