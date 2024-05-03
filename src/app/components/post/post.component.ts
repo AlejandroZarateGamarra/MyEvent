@@ -7,6 +7,7 @@ import { AuthService } from "../../../domain/services/auth/auth.service";
 import {MatCard, MatCardActions, MatCardContent, MatCardFooter, MatCardHeader} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
 import { MatCardTitle, MatCardSubtitle} from "@angular/material/card";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-post',
@@ -21,7 +22,8 @@ import { MatCardTitle, MatCardSubtitle} from "@angular/material/card";
     MatCardActions,
     MatButton,
     MatCardTitle,
-    MatCardSubtitle
+    MatCardSubtitle,
+    RouterLink
   ],
   templateUrl: './post.component.html',
   styleUrl: './post.component.scss'

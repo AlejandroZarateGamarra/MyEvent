@@ -3,13 +3,15 @@ import { Boleta } from "../../model/notification.model";
 import { NgForOf, NgIf } from "@angular/common";
 import { BasicService } from "../../shared/basic.service";
 import { notificationEnvironment } from "../../environments/notification-environment";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'event-notification',
   standalone: true,
   imports: [
     NgIf,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './event-notification.component.html',
   styleUrl: './event-notification.component.scss'
