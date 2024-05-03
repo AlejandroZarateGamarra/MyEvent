@@ -23,7 +23,6 @@ import {RouterLink} from "@angular/router";
     MatSelectModule,
     ReactiveFormsModule,
     RouterLink,
-
   ]
 })
 export class CreateEventComponent {
@@ -57,7 +56,7 @@ export class CreateEventComponent {
       this.direccion.value ?? '',
       this.category.value ?? ''
     );
-    */
+
 
     this.basicService.createEvent(newEvent).subscribe(
       response => {
@@ -71,6 +70,6 @@ export class CreateEventComponent {
         });
       }
     );
-
+    */
   }
 }
