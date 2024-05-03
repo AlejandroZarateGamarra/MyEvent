@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {notificationEnvironment} from "../environments/notification-environment";
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-import { Observable, throwError, retry } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 
@@ -43,5 +43,12 @@ export class BasicService {
         }),
         catchError(this.handleError)
       )
+  }
+  createEvent(event: any): Observable<any> {
+    const url = `${this.base_url}/eventos`;
+    return this.httpClient.post(url, event, this.httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
   }
 }

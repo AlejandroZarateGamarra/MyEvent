@@ -8,6 +8,9 @@ import {ContactComponent} from "./views/contact/contact/contact.component";
 import { EventNotificationComponent } from './views/event-notification/event-notification.component';
 import { EventPurchaseConfirmationComponent } from './views/event-purchase-confirmation/event-purchase-confirmation.component';
 
+//import Piero
+import {CreateEventComponent} from "./components/create-event/create-event.component";
+
 
 export const routes: Routes = [
 
@@ -17,6 +20,7 @@ export const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'event_notification', component: EventNotificationComponent},
   {path: 'event_purchase_confirmation', component: EventPurchaseConfirmationComponent},
+  {path: 'create_event', component: CreateEventComponent},
 
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
