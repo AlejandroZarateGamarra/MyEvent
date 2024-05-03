@@ -1,0 +1,86 @@
+  <div class="container">
+    <div class="form-box">
+      <h2>Registrate</h2>
+
+      <div class="form-wrapper">
+
+        <div class="form-container">
+          <mat-label for="nombreInput">Nombre:</mat-label>
+          <mat-form-field class="example-form-field">
+            <input matInput
+                   [type] = "mostrarNombre ? 'text' : 'text'"
+                   id="nombreInput"
+                   [(ngModel)]="nombre"
+                   placeholder="Ingrese su nombre">
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="nombre=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+
+
+        <div class="form-container">
+          <mat-label for="correoInput">Correo Electrónico:</mat-label>
+          <mat-form-field class="example-form-field">
+            <input matInput
+                   [type]="mostrarEmail ? 'text' : 'email'"
+                   id="correoInput"
+                   [(ngModel)]="correo"
+                   placeholder="Ingrese su correo electrónico">
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="correo=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+        <div class="form-container">
+          <mat-label for="contrasenaInput">Contraseña:</mat-label>
+          <mat-form-field class="example-form-field">
+            <input matInput
+                   [type]="mostrarContrasena ? 'text' : 'password'"
+                   id="contrasenaInput"
+                   [(ngModel)]="contrasena"
+                   placeholder="Ingrese su contraseña">
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="contrasena=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+        <div class="form-container">
+          <mat-label for="repContrasenaInput">Repetir Contraseña:</mat-label>
+          <mat-form-field class="example-form-field">
+            <input matInput
+                   [type]="mostrarContrasena ? 'text' : 'password'"
+                   id="repContrasenaInput"
+                   [(ngModel)]="Repcontrasena"
+                   placeholder="Repita su contraseña">
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="Repcontrasena=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+
+
+          <mat-checkbox [(ngModel)]="mostrarContrasena">
+            Mostrar contraseña
+          </mat-checkbox>
+
+          <mat-checkbox [(ngModel)]="savepassword">
+            Recordarme
+          </mat-checkbox>
+        </div>
+
+        <div class="form-container">
+          <mat-checkbox [(ngModel)]="accountType">Ser Organizador</mat-checkbox>
+        </div>
+
+        <div class="button-container">
+          <button mat-flat-button (click)="redirigirAInicioSesion()">Crear cuenta</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>  
+

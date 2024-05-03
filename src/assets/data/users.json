@@ -1,0 +1,42 @@
+{
+  "usuarios": [
+    {
+      "id": "1466",
+      "user": "Michael",
+      "password": "123",
+      "email": "michael@gmail.com"
+    },
+    {
+      "id": "e73d",
+      "user": "prueba",
+      "password": "123",
+      "email": "prueba1@gmail.com"
+    },
+    {
+      "id": "2129",
+      "user": "mario",
+      "password": "mario",
+      "email": "mario1@gmail.com"
+    }
+  ],
+  "admins": [
+    {
+      "name": "admin",
+      "id": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com"
+    },
+    {
+      "id": "e041",
+      "user": "Admin2",
+      "password": "aaa",
+      "email": "admin2@gmail.com"
+    },
+    {
+      "id": "a4aa",
+      "user": "piero",
+      "password": "aaa",
+      "email": "piero@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+/* Importar la fuente Nunito Sans desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+
+h2{
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700; /* Establece el peso de la fuente a semibold (700) */
+  color: #333;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around; /* Espacio entre secciones izquierda y derecha */
+  align-items: center;
+  padding: 20px; /* Espaciado interno */
+
+}
+
+.left-section {
+  /* Ajusta el margen derecho para separar más la izquierda de la derecha */
+}
+
+.right-section {
+  margin-left: -300px; /* Ajusta el margen izquierdo para separar más la derecha de la izquierda */
+}
+.form-box {
+  border: 1.5px solid black; /* Borde de la caja del formulario */
+  padding: 20px; /* Espaciado interno de la caja del formulario */
+  width: 350px; /* Ancho de la caja del formulario */
+  border-radius: 10px; /* le da bordes circulares a la caja de registro*/
+  background-color: white;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px; /* le da bordes circulares a la caja de registro*/
+
+}
+
+.example-form-field {
+  width: 100%;
+  height: 80px; /* Ajusta la altura según tu preferencia */
+  font-size: 14px; /* Ajusta el tamaño de la fuente según tu preferencia */
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-container mat-form-field {
+  width: 100%;
+}
+
+.button-container button {
+  width: 330px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #7F265B;
+  color: white;
+}
+
+.forgot-password-container {
+  width: 100%;
+  text-align: left; /* Alinea el enlace a la derecha */
+}
+
+.forgot-password-link {
+  color: #7F265B;
+  cursor: pointer;
+}
+
+h2{
+  text-align: center;
+}
+
+
