@@ -1,0 +1,24 @@
+<div id="container">
+  <div id="success-message">
+    <p>¡TRANSACCIÓN EXITOSA!</p>
+    <div id="rectangle">
+      <img src="./assets/images/verifiedIcon.png" id="check-icon">
+      <div id="transaction-details">
+        <p>Estado de transacción: <span> {{boleta?.estado}}</span></p>
+        <p>Nombre del comercio: <span>MyEvent</span></p>
+        <p>Fecha de pago: <span>{{ boleta?.fecha_pago }}</span></p>
+        <p>Hora de pago: <span>{{ boleta?.hora_pago }}</span></p>
+        <p>ID de la transacción: <span>{{boleta?.id}}</span></p>
+        <p>CUS: <span>1234567891</span></p>
+        <div *ngFor="let entrada of boleta?.entradas">
+          <p>Concepto: <span>{{ entrada.tipo }}</span></p>
+          <p>Costo subtotal: <span>{{ entrada.precio }}</span></p>
+        </div>
+        <p>Método de pago: <span>{{ boleta?.metodo_pago }}</span></p>
+        <p>Total: <span>{{ getTotal() }}</span></p>
+      </div>
+      <button id="end-button">Finalizar</button>
+      <button id="download-button">Descargar PDF</button>
+    </div>
+  </div>
+</div>
