@@ -1,0 +1,38 @@
+<!-- Botones para cambiar el rol -->
+<button mat-button (click)="authService.makeAdmin()">Simular Admin</button>
+<button mat-button (click)="authService.makeUser()">Simular Usuario</button>
+
+<div class="grid-container">
+  <mat-card class="card-style" *ngFor="let evento of eventos; trackBy: trackByPosts" >
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-header>
+        <mat-card-title>{{ evento.nombre }}</mat-card-title>
+        <mat-card-subtitle>{{ evento.tipo }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>{{ evento.descripcion }}</p>
+        <p>Fecha: {{ evento.fecha }}</p>
+        <p>Hora: {{ evento.hora }}</p>
+        <p>Lugar: {{ evento.lugar }}</p>
+        <p>Precio de entrada: {{ evento.precio_entrada }}</p>
+      </mat-card-content>
+      <br>
+      <mat-card-footer>
+        <!--
+        <img mat-card-image src="/assets/data/images/.jpeg" alt="Descripción de la imagen">
+        -->
+        <mat-card-actions *ngIf="authService.isAdmin()">
+          <button mat-button>Crear</button>
+          <button mat-button>Leer</button>
+          <button mat-button>Actualizar</button>
+          <button mat-button (click)="onDelete(evento.id)">Eliminar</button>
+        </mat-card-actions>
+        <mat-card-actions *ngIf="!authService.isAdmin()">
+          <!-- Aquí puedes agregar los elementos que deseas mostrar si el usuario es un usuario normal -->
+        </mat-card-actions>
+      </mat-card-footer>
+
+    </div>
+  </mat-card>
+</div>

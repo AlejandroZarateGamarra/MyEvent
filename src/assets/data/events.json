@@ -1,0 +1,224 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "tipo": "concierto",
+      "nombre": "Concierto de Jazz en el Parque",
+      "fecha": "2024-06-25",
+      "hora": "18:00",
+      "lugar": "Parque Central",
+      "artista": "Orquesta de Jazz Y",
+      "precio_entrada": 15,
+      "descripcion": "¡Disfruta de una tarde relajante con los mejores sonidos de jazz en vivo!"
+    },
+    {
+      "id": 2,
+      "tipo": "discoteca",
+      "nombre": "Noche de Reggaeton en Club Caliente",
+      "fecha": "2024-07-05",
+      "hora": "23:00",
+      "lugar": "Club Caliente",
+      "dj": "DJ Reggaetonero",
+      "precio_entrada": 25,
+      "descripcion": "¡Baila toda la noche con los ritmos más calientes del reggaeton!"
+    },
+    {
+      "id": 3,
+      "tipo": "evento_especial",
+      "nombre": "Gala de Moda Primavera-Verano",
+      "fecha": "2024-08-15",
+      "hora": "20:00",
+      "lugar": "Centro de Convenciones",
+      "organizador": "Revista de Moda Glamour",
+      "precio_entrada": 40,
+      "descripcion": "¡Descubre las últimas tendencias de la moda en una noche llena de estilo y glamour!"
+    },
+    {
+      "id": 4,
+      "tipo": "concierto",
+      "nombre": "Concierto de Rock Alternativo",
+      "fecha": "2024-06-30",
+      "hora": "21:30",
+      "lugar": "Teatro Metropolitano",
+      "artista": "Banda Indie Z",
+      "precio_entrada": 35,
+      "descripcion": "¡Vive la experiencia única de la música alternativa en un ambiente íntimo y acogedor!"
+    },
+    {
+      "id": 5,
+      "tipo": "discoteca",
+      "nombre": "Fiesta de los 80 en Retro Club",
+      "fecha": "2024-07-10",
+      "hora": "22:30",
+      "lugar": "Retro Club",
+      "dj": "DJ Retro",
+      "precio_entrada": 20,
+      "descripcion": "¡Viaja en el tiempo y revive los mejores éxitos de los años 80 en una noche llena de nostalgia!"
+    },
+    {
+      "id": 6,
+      "tipo": "evento_especial",
+      "nombre": "Cena de Gala Benéfica",
+      "fecha": "2024-09-05",
+      "hora": "19:00",
+      "lugar": "Hotel de Lujo",
+      "organizador": "Fundación Solidaria",
+      "precio_entrada": 50,
+      "descripcion": "¡Contribuye a una buena causa mientras disfrutas de una exquisita cena y entretenimiento de primer nivel!"
+    },
+    {
+      "id": 7,
+      "tipo": "concierto",
+      "nombre": "Concierto de Música Latina en la Playa",
+      "fecha": "2024-07-20",
+      "hora": "17:00",
+      "lugar": "Playa del Este",
+      "artista": "Banda Latina A",
+      "precio_entrada": 25,
+      "descripcion": "¡Baila al ritmo de la música latina bajo el sol y junto al mar en una tarde inolvidable!"
+    },
+    {
+      "id": 8,
+      "tipo": "discoteca",
+      "nombre": "Noche de Electro House en Neon Club",
+      "fecha": "2024-08-02",
+      "hora": "23:30",
+      "lugar": "Neon Club",
+      "dj": "DJ Electro",
+      "precio_entrada": 30,
+      "descripcion": "¡Sumérgete en un mundo de luces y beats electrónicos en la mejor fiesta de la ciudad!"
+    },
+    {
+      "id": 9,
+      "tipo": "evento_especial",
+      "nombre": "Festival de Cine Independiente",
+      "fecha": "2024-09-20",
+      "hora": "18:30",
+      "lugar": "Cinearte",
+      "organizador": "Asociación de Cineastas Independientes",
+      "precio_entrada": 15,
+      "descripcion": "¡Descubre las películas más innovadoras y creativas de la escena independiente en un ambiente único!"
+    },
+    {
+      "id": 10,
+      "tipo": "concierto",
+      "nombre": "Concierto de Ópera al Aire Libre",
+      "fecha": "2024-07-12",
+      "hora": "19:30",
+      "lugar": "Jardines del Palacio",
+      "artista": "Compañía de Ópera Z",
+      "precio_entrada": 40,
+      "descripcion": "¡Déjate llevar por la magia de la ópera en un entorno natural y mágico bajo las estrellas!"
+    },
+    {
+      "id": 11,
+      "tipo": "discoteca",
+      "nombre": "Noche de Hip Hop en Urban Beats",
+      "fecha": "2024-08-08",
+      "hora": "23:00",
+      "lugar": "Urban Beats",
+      "dj": "DJ Hip Hop",
+      "precio_entrada": 25,
+      "descripcion": "¡Siente la energía del hip hop en una noche llena de ritmo y flow en la discoteca más urbana de la ciudad!"
+    },
+    {
+      "id": 12,
+      "tipo": "evento_especial",
+      "nombre": "Gala de Premios de la Industria Cinematográfica",
+      "fecha": "2024-10-10",
+      "hora": "20:00",
+      "lugar": "Teatro Principal",
+      "organizador": "Academia de Cine",
+      "precio_entrada": 60,
+      "descripcion": "¡Celebra lo mejor del cine con una elegante gala de premios en honor a los talentos más destacados de la industria!"
+    },
+    {
+      "id": 13,
+      "tipo": "concierto",
+      "nombre": "Concierto de Piano Clásico",
+      "fecha": "2024-07-08",
+      "hora": "19:00",
+      "lugar": "Teatro de la Ciudad",
+      "artista": "Pianista Clásico X",
+      "precio_entrada": 30,
+      "descripcion": "¡Disfruta de la majestuosidad del piano clásico interpretado por un virtuoso pianista en un ambiente refinado!"
+    },
+    {
+      "id": 14,
+      "tipo": "discoteca",
+      "nombre": "Fiesta de Salsa en Calle Sabor",
+      "fecha": "2024-08-15",
+      "hora": "22:00",
+      "lugar": "Calle Sabor",
+      "dj": "DJ Salsa",
+      "precio_entrada": 20,
+      "descripcion": "¡Mueve tus caderas al ritmo de la salsa en una noche llena de sabor y alegría en la mejor calle de la salsa!"
+    },
+    {
+      "id": 15,
+      "tipo": "evento_especial",
+      "nombre": "Exposición de Arte Contemporáneo",
+      "fecha": "2024-09-25",
+      "hora": "11:00",
+      "lugar": "Galería de Arte Moderno",
+      "organizador": "Asociación de Artistas Contemporáneos",
+      "precio_entrada": 10,
+      "descripcion": "¡Descubre las obras más vanguardistas y provocativas del arte contemporáneo en una fascinante exposición!"
+    },
+    {
+      "id": 16,
+      "tipo": "concierto",
+      "nombre": "Concierto de Pop Internacional",
+      "fecha": "2024-07-18",
+      "hora": "20:30",
+      "lugar": "Estadio Olímpico",
+      "artista": "Superestrella del Pop",
+      "precio_entrada": 50,
+      "descripcion": "¡Canta y baila con los éxitos internacionales de la superestrella del pop en el evento más esperado del año!"
+    },
+    {
+      "id": 17,
+      "tipo": "discoteca",
+      "nombre": "Noche de Techno en Digital Arena",
+      "fecha": "2024-08-25",
+      "hora": "00:00",
+      "lugar": "Digital Arena",
+      "dj": "DJ Techno",
+      "precio_entrada": 25,
+      "descripcion": "¡Sumérgete en la atmósfera futurista del techno en una noche de beats electrónicos en la discoteca más avanzada tecnológicamente!"
+    },
+    {
+      "id": 18,
+      "tipo": "evento_especial",
+      "nombre": "Feria Gastronómica Internacional",
+      "fecha": "2024-10-05",
+      "hora": "12:00",
+      "lugar": "Recinto Ferial",
+      "organizador": "Asociación de Chefs",
+      "precio_entrada": 20,
+      "descripcion": "¡Embárcate en un viaje culinario alrededor del mundo con los sabores más exquisitos de la gastronomía internacional!"
+    },
+    {
+      "id": 19,
+      "tipo": "concierto",
+      "nombre": "Concierto de Música Clásica en el Castillo",
+      "fecha": "2024-07-28",
+      "hora": "19:30",
+      "lugar": "Castillo Antiguo",
+      "artista": "Orquesta Sinfónica Nacional",
+      "precio_entrada": 45,
+      "descripcion": "¡Déjate llevar por la belleza atemporal de la música clásica en un escenario histórico único!"
+    },
+    {
+      "id": 20,
+      "tipo": "discoteca",
+      "nombre": "Fiesta de Karaoke en Sing Along Bar",
+      "fecha": "2024-09-08",
+      "hora": "21:00",
+      "lugar": "Sing Along Bar",
+      "dj": "DJ Karaoke",
+      "precio_entrada": 15,
+      "descripcion": "¡Demuestra tu talento vocal y diviértete cantando tus canciones favoritas en la mejor fiesta de karaoke de la ciudad!"
+    }
+  ]
+}

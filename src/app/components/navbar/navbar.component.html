@@ -1,0 +1,23 @@
+<div class="container">
+  <nav>
+    <div class="nav__logo">
+      <a routerLink="home">
+        <img src="/assets/images/myevent_logo.png" alt="logo" />
+      </a>
+    </div>
+    <ul class="nav__links">
+      <li class="link"><a routerLink="home">Inicio</a></li>
+      <li class="link"><a routerLink="catalogue">MyEvent</a></li>
+      <li class="link"><a routerLink="about">Nosotros</a></li>
+      <li class="link"><a routerLink="contact">Contactanos</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Buscar" [formControl]="searchControl" />
+      <span><i class="ri-search-line"></i></span>
+    </div>
+    <div class="login" *ngIf="!loggedIn" (click)="login()">
+      Login
+      <span><i class="ri-user-3-fill"></i></span>
+    </div>
+  </nav>
+</div>

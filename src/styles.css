@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/components/shared/bootstrap-grid.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import "../node_modules/remixicon/fonts/remixicon.css";
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right,
+  rgba(0, 0, 0, 0.9),
+  rgba(255, 255, 255, 0)),  url("./assets/images/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --primary-color: #0B3C5D;
+  --secondary-color: #0B3C5D;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --white: #ffffff;
+  --max-width: 1400px;
+}

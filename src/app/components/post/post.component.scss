@@ -1,0 +1,13 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card-style {
+  height: 500px; // Ajusta este valor según tus necesidades
+}
+
+.mat-card-actions {
+  margin-bottom: 10px; // Ajusta este valor según tus necesidades
+}
