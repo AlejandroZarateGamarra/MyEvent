@@ -10,6 +10,12 @@ import { EventPurchaseConfirmationComponent } from './views/event-purchase-confi
 
 //import Piero
 import {CreateEventComponent} from "./components/create-event/create-event.component";
+import {LoginComponent} from "./components/login/login.component";
+import {RegisterComponent} from "./components/register/register.component";
+
+//Import Michael
+
+
 
 
 export const routes: Routes = [
@@ -21,6 +27,8 @@ export const routes: Routes = [
   {path: 'event_notification', component: EventNotificationComponent},
   {path: 'event_purchase_confirmation', component: EventPurchaseConfirmationComponent},
   {path: 'create_event', component: CreateEventComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
 
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
