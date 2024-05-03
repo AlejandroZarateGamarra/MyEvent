@@ -15,7 +15,7 @@
       <input type="text" placeholder="Buscar" [formControl]="searchControl" />
       <span><i class="ri-search-line"></i></span>
     </div>
-    <div class="login" *ngIf="!loggedIn" (click)="login()">
+    <div class="login" *ngIf="!loggedIn" (click)="login()" routerLink="/login">
       Login
       <span><i class="ri-user-3-fill"></i></span>
     </div>
