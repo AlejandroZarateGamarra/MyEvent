@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="text-theme-primary">CREAR NUEVO EVENTO</h3>
+      <p class="ab-5">Por favor, complete los siguientes campos para agregar un nuevo evento.</p>
+      <br>
+    </div>
+  </div>
+  <form>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="nombreEvento" >Nombre del Evento</label>
+          <input type="text" [formControl]="name" id="nombreEvento" class="form-control" placeholder="Ingrese el nombre del evento" maxlength="100"><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+
+          <!-- <label for="fecha">Fecha del Evento</label> -->
+          <label>Fecha del Evento</label>
+          <mat-form-field appearance="fill">
+            <mat-label>Fecha del Evento</mat-label>
+            <input matInput [matDatepicker]="picker" [formControl]="date" placeholder="Seleccione una fecha">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="duracionEvento">Duracion(horas)</label>
+              <input type="number" [formControl]="duration" id="duracionEvento" class="form-control" min="1" max="24" value="1"><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="horaEvento">Hora</label>
+          <mat-form-field appearance="fill">
+            <mat-label>Hora</mat-label>
+            <input matInput type="time" [formControl]="hours" id="horaEvento" placeholder="Ingrese la hora del evento">
+          </mat-form-field>
+
+          <div class="input-group-append">
+            <label>AM/PM</label>
+            <select class="custom-select" id="horaAmPm" [formControl]="period">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="direccionEvento">Direccion</label>
+          <textarea id="direccionEvento" [formControl]="direccion" class="form-control" rows="3" placeholder="Ingrese la direccion del evento"></textarea><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <div class="form-group">
+          <label for="categoriaEvento">Categoria</label>
+          <select id="categoriaEvento" [formControl]="category" class="form-control">
+            <option value="" disabled>Por favor seleccione una categoria</option>
+            <option value="Discoteca">Discoteca</option>
+            <option value="Concierto">Concierto</option>
+            <option value="Evento Cultural">Evento Cultural</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="col-md-12 text-center">
+        <button type="button" class="btn btn-warning ml-3">Volver</button>
+        <button type="button" class="btn btn-info ml-3" (click)="goToNextStep()" routerLink="/catalogue">Continuar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="texto-container-relative">
+  <p>RESUMEN DE TU EVENTO</p><br><br>
+  <p>Nombre del evento: <span class="titulo">{{ name.value }}</span></p>
+  <p>Fecha del evento: <span class="titulo">{{ date.value }}</span></p>
+  <p>Hora: <span class="titulo">{{ hours.value }} {{ period.value }}</span></p>
+  <p>Duración: <span class="titulo">{{ duration.value }} Horas</span></p>
+  <p>Lugar del evento: <span class="titulo">{{ direccion.value }}</span></p>
+  <p>Categoria: <span class="titulo">{{ category.value }}</span></p>
+</div>

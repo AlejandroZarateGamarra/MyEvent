@@ -24,7 +24,7 @@
         <img mat-card-image src="/assets/data/images/.jpeg" alt="Descripción de la imagen">
         -->
         <mat-card-actions *ngIf="authService.isAdmin()">
-          <button mat-button>Crear</button>
+          <button mat-button routerLink="/create_event">Crear</button>
           <button mat-button>Leer</button>
           <button mat-button>Actualizar</button>
           <button mat-button (click)="onDelete(evento.id)">Eliminar</button>
