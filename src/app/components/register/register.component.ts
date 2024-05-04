@@ -36,7 +36,7 @@ export class RegisterComponent {
       email: this.correo,
     };
 
-    const url = this.accountType ? 'http://localhost:3000/admins' : 'http://localhost:3000/usuarios';
+    const url = this.accountType ? 'http://localhost:3001/admins' : 'http://localhost:3001/usuarios';
 
     this.http.post(url, newUser).subscribe(response => {
       console.log(response);

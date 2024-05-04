@@ -17,6 +17,12 @@
       "user": "mario",
       "password": "mario",
       "email": "mario1@gmail.com"
+    },
+    {
+      "id": "48e4",
+      "user": "luis",
+      "password": "luis1",
+      "email": "luisgmail.com"
     }
   ],
   "admins": [

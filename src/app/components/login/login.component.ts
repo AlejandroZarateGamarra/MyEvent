@@ -25,7 +25,7 @@ export class LoginComponent {
 
   // Método para verificar las credenciales del usuario
   verificarCredenciales() {
-    this.http.get('http://localhost:3000/admins').subscribe((data: any) => {
+    this.http.get('http://localhost:3001/admins').subscribe((data: any) => {
       console.log(data);
       if (data) {
         const userExists = data.some((user: {
@@ -37,7 +37,7 @@ export class LoginComponent {
           alert('Bienvenido organizador');
           this.router.navigate(['/home']);
         } else {
-          this.http.get('http://localhost:3000/usuarios').subscribe((data: any) => {
+          this.http.get('http://localhost:3001/usuarios').subscribe((data: any) => {
             console.log(data);
             if (data) {
               const userExists = data.some((user: {
