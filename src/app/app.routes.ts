@@ -3,20 +3,15 @@ import {HomeComponent} from "./views/home/home/home.component";
 import {CatalogueComponent} from "./views/catalogue/catalogue/catalogue.component";
 import {AboutComponent} from "./views/about/about/about.component";
 import {ContactComponent} from "./views/contact/contact/contact.component";
-
 //Imports Alessandro
 import { EventNotificationComponent } from './views/event-notification/event-notification.component';
 import { EventPurchaseConfirmationComponent } from './views/event-purchase-confirmation/event-purchase-confirmation.component';
-
 //import Piero
 import {CreateEventComponent} from "./components/create-event/create-event.component";
+//Import Michael
 import {LoginComponent} from "./components/login/login.component";
 import {RegisterComponent} from "./components/register/register.component";
-
-//Import Michael
-
-
-
+import {LoginformComponent} from "./components/loginform/loginform.component";
 
 export const routes: Routes = [
 
@@ -27,7 +22,7 @@ export const routes: Routes = [
   {path: 'event_notification', component: EventNotificationComponent},
   {path: 'event_purchase_confirmation', component: EventPurchaseConfirmationComponent},
   {path: 'create_event', component: CreateEventComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'login', component: LoginformComponent},
   {path: 'register', component: RegisterComponent},
 
   {path: '', pathMatch: 'full', redirectTo: 'home'},

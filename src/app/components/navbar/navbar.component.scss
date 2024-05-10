@@ -45,7 +45,7 @@ nav {
 }
 
 .search input::placeholder {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .search span {
@@ -70,6 +70,12 @@ nav {
 
 .login:hover {
   background-color: var(--secondary-color);
+  transition: 0.4s;
+}
+
+.login:hover .icon-login {
+  color: var(--secondary-color);
+  transition: 0.4s;
 }
 
 .login span {
@@ -79,6 +85,7 @@ nav {
   background-color: var(--white);
   border-radius: 100%;
 }
+
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 900px) {
