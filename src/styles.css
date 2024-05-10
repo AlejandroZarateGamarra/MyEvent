@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./app/components/shared/bootstrap-grid.css";
+
 @import "../node_modules/remixicon/fonts/remixicon.css";
 body {
-
   background: linear-gradient(to right,
   rgba(0, 0, 0, 0.9),
   rgba(255, 255, 255, 0)),  url("./assets/images/background.jpg");
@@ -18,7 +17,7 @@ body {
 }
 
 :root {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   --primary-color: #0B3C5D;
   --secondary-color: #0B3C5D;
   --text-dark: #0f172a;
